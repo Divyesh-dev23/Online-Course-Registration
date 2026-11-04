@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Online Course Registration System</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/courses">Available Courses</a>
+            <a href="/register">Register Now</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <h2>Welcome to Online Course Registration</h2>
+
+        <p>Register for your favourite courses and enhance your skills.</p>
+
+        <a href="/register" class="btn">Register for a Course</a>
+
+        <h2>Registered Students</h2>
+
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Student Name</th>
+                <th>Roll Number</th>
+                <th>Email</th>
+                <th>Course</th>
+            </tr>
+
+            {% for student in registrations %}
+            <tr>
+                <td>{{ student[0] }}</td>
+                <td>{{ student[1] }}</td>
+                <td>{{ student[2] }}</td>
+                <td>{{ student[3] }}</td>
+                <td>{{ student[4] }}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+</body>
+</html>

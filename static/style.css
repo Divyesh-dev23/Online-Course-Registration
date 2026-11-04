@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f5f9;
+    color: #333;
+}
+
+header {
+    background-color: #1e40af;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 85%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #1e40af;
+}
+
+.container > p {
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 12px 0 8px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button, .btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+button:hover, .btn:hover {
+    background-color: #1e40af;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+}
+
+th {
+    background-color: #1e40af;
+    color: white;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: #eff6ff;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #bfdbfe;
+}
+
+.course-card h3 {
+    color: #1e40af;
+    margin-bottom: 12px;
+}
+
+.course-card p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}

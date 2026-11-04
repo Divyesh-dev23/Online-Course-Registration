@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Courses</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Available Courses</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/register">Register Now</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <h2>Explore Our Courses</h2>
+
+        <div class="course-list">
+
+            {% for course in courses %}
+            <div class="course-card">
+                <h3>{{ course }}</h3>
+                <p>Enhance your knowledge and develop new skills.</p>
+                <a href="/register" class="btn">Enroll Now</a>
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</body>
+</html>
