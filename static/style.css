@@ -137,3 +137,11 @@ th {
         font-size: 12px;
     }
 }
+
+footer {
+    background-color: #1e40af;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
